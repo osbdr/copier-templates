@@ -1,0 +1,31 @@
+platform:
+  choices:
+    GITHUB: "github"
+    GITLAB: "gitlab"
+  default: "github"
+  type: str
+
+use_semver:
+  type: bool
+  help: Do you want to use semnatic versioning?
+  default: yes
+
+use_renovate:
+  type: bool
+  help: Do you want to use renovate?
+  default: yes
+
+type:
+  choices:
+    PYTHON: "python"
+    R: "r"
+    NODEJS: "nodejs"
+    DJANGO: "django"
+  default: "r"
+  type: str
+
+_exclude:
+  - /env
+  - /.git
+  - /start.py
+  - /copier.yml
