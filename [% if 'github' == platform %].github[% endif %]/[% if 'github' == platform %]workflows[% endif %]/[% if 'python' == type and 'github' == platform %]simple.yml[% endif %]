@@ -1,4 +1,4 @@
-name: Standard Pipeline
+name: Python Pipeline
 
 on:
   pull_request:
