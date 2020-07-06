@@ -17,15 +17,15 @@ use_renovate:
 
 type:
   choices:
+    DJANGO: "django"
+    NODEJS: "nodejs"
     PYTHON: "python"
     R: "r"
-    NODEJS: "nodejs"
-    DJANGO: "django"
-  default: "r"
+  default: "django"
   type: str
 
 _exclude:
   - /env
   - /.git
-  - /start.py
   - /copier.yml
+  - README.md
